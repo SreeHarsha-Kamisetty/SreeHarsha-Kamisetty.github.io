@@ -705,9 +705,11 @@ section .title::after{
     gap: 2rem;
     background-color: #444;
 }
-.last-text p{
+.last-text h1{
+    margin-left: 20px;
+    text-align: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 34px;
 }
 .top i{
     padding: 10px;
@@ -952,4 +954,53 @@ section .title::after{
     } */
 }
 
+/* Base styles */
+.max-with {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+#stat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.react-activity-calendar,
+#github-stats-card,
+#github-top-langs,
+#github-streak-stats {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ht1 {
+    width: 100%;
+    height: auto;
+}
+
+/* GitHub Statistics title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* GitHub Statistics card */
+.react-activity-calendar,
+#github-stats-card,
+#github-top-langs,
+#github-streak-stats {
+    background-color: #f7f7f7;
+}
+
+/* Add hover effect */
+.react-activity-calendar:hover,
+#github-stats-card:hover,
+#github-top-langs:hover,
+#github-streak-stats:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
